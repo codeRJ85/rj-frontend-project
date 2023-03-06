@@ -23,12 +23,8 @@
       <h2 class="text-center mt-2 mb-4">OPEN POSITIONS</h2>
       <div>
         {% for job in jobs %}
-        <div style="margin-bottom:16px;">
-          <h4 style="color:rgb(120,120,120);margin-bottom:4px">{{ job.title }}</h4>
-          <div><b>Location:</b> {{ job.location }}</div>
-          <div><b>Salary:</b> {{ job.salary }}</div>
-        </div>
-        {% endfor %}
+        {% include'jobitem.html'%}
+         {% endfor %}
       </div>
       <div class="text-center">
         <button class="btn btn-primary btn-lg">Contact Us</button> 
